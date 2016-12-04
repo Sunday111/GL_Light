@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Base">
+      <UniqueIdentifier>{be38a6b5-57f4-4735-b535-1279b0c2c1dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Base\Geom">
+      <UniqueIdentifier>{5c6cb693-97ef-4ee5-be86-6232de3bc722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base">
+      <UniqueIdentifier>{cf33eca0-13b6-4c28-9514-414613afbcb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{dc7dc228-cd15-4a07-9708-a1d5b580afed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base\Geom">
+      <UniqueIdentifier>{b7fe18b3-9298-40b5-a0bc-fde68d4ed1cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{ed0f87aa-1027-4125-a894-cb6850a3d2bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Render">
+      <UniqueIdentifier>{f15d9908-adc6-429a-9543-a3f9ae7244b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render">
+      <UniqueIdentifier>{93f769f7-9a8a-4df7-9df4-f321ee2a8536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Render\Shaders">
+      <UniqueIdentifier>{0597ac39-ae85-40c6-9511-43f7598abdae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render\Shaders">
+      <UniqueIdentifier>{621743a2-2803-4538-ba45-eb0d42f68a17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene\Materials">
+      <UniqueIdentifier>{c578d69f-a350-401c-88ba-4b3fc4e096e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Materials">
+      <UniqueIdentifier>{5c526d43-053e-436b-b164-b6c6bcb005b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene\Lights">
+      <UniqueIdentifier>{10d5e325-08d0-4ae4-acff-854edb448303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene\Lights">
+      <UniqueIdentifier>{580561cb-584f-4b92-9aca-f98484cabae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{6d72a587-d045-4c08-b9b8-ce555986d643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders">
+      <UniqueIdentifier>{0708b8ee-1641-4541-90f7-cadd3bbd9409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Textures">
+      <UniqueIdentifier>{0e5e3eb9-6474-4c28-bfb7-1ed60c19aa8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Geom\BoundingBox.cpp">
+      <Filter>Source Files\Base\Geom</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\MeshData.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Geom\Quaternion.cpp">
+      <Filter>Source Files\Base\Geom</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Geom\Transform.cpp">
+      <Filter>Source Files\Base\Geom</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Geom\VertexBlob.cpp">
+      <Filter>Source Files\Base\Geom</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\VertexArrayObject.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\VertexBufferObject.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ElementBufferObject.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Shaders\Shader.cpp">
+      <Filter>Source Files\Render\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Shaders\VertexShader.cpp">
+      <Filter>Source Files\Render\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Shaders\FragmentShader.cpp">
+      <Filter>Source Files\Render\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Shaders\ShaderProgram.cpp">
+      <Filter>Source Files\Render\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Texture2D.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Model3d.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Camera.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Materials\ColoredMaterial.cpp">
+      <Filter>Source Files\Scene\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Materials\TexturedMaterial.cpp">
+      <Filter>Source Files\Scene\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Materials\Material.cpp">
+      <Filter>Source Files\Scene\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Lights\LightsSource.cpp">
+      <Filter>Source Files\Scene\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Lights\PointLights.cpp">
+      <Filter>Source Files\Scene\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Lights\LightsArray.cpp">
+      <Filter>Source Files\Scene\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Lights\DirectionalLight.cpp">
+      <Filter>Source Files\Scene\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Lights\SpotLight.cpp">
+      <Filter>Source Files\Scene\Lights</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base\EnumFlags.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ArrayView.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Geom\Vector.h">
+      <Filter>Header Files\Base\Geom</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Geom\BoundingBox.h">
+      <Filter>Header Files\Base\Geom</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\MeshData.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Geom\Quaternion.h">
+      <Filter>Header Files\Base\Geom</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Geom\Transform.h">
+      <Filter>Header Files\Base\Geom</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Geom\VertexBlob.h">
+      <Filter>Header Files\Base\Geom</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Geom\IndexBlob.h">
+      <Filter>Header Files\Base\Geom</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\VertexBufferObject.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\VertexArrayObject.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ElementBufferObject.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Shaders\ShaderType.h">
+      <Filter>Header Files\Render\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Shaders\ShaderProgram.h">
+      <Filter>Header Files\Render\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Shaders\Shader.h">
+      <Filter>Header Files\Render\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Shaders\VertexShader.h">
+      <Filter>Header Files\Render\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Shaders\FragmentShader.h">
+      <Filter>Header Files\Render\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Texture.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Model3d.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Camera.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Stopwatch.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Materials\IMaterial.h">
+      <Filter>Header Files\Scene\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Materials\TexturedMaterial.h">
+      <Filter>Header Files\Scene\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Materials\ColoredMaterial.h">
+      <Filter>Header Files\Scene\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Materials\Material.h">
+      <Filter>Header Files\Scene\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Lights\LightSource.h">
+      <Filter>Header Files\Scene\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Lights\PointLight.h">
+      <Filter>Header Files\Scene\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Lights\LightsArray.h">
+      <Filter>Header Files\Scene\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Lights\DirectionalLight.h">
+      <Filter>Header Files\Scene\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Lights\SpotLight.h">
+      <Filter>Header Files\Scene\Lights</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Data\Readme.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="..\Data\Shaders\ColoredMaterialFS.glsl">
+      <Filter>Data\Shaders</Filter>
+    </Text>
+    <Text Include="..\Data\Shaders\NoLightColoredMaterialFS.glsl">
+      <Filter>Data\Shaders</Filter>
+    </Text>
+    <Text Include="..\Data\Shaders\TexturedMaterialFS.glsl">
+      <Filter>Data\Shaders</Filter>
+    </Text>
+    <Text Include="..\Data\Shaders\VS.glsl">
+      <Filter>Data\Shaders</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Data\Textures\container_diffuse.png">
+      <Filter>Data\Textures</Filter>
+    </Image>
+    <Image Include="..\Data\Textures\container_specular.png">
+      <Filter>Data\Textures</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

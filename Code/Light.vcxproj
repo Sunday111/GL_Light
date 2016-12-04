@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{95B7D11D-46D0-4840-BE8A-F11F8778E227}</ProjectGuid>
+    <RootNamespace>Shaders</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\Intermediate\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\Intermediate\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\Intermediate\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\Intermediate\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Code\;$(SolutionDir)..\ThirdParty\;$(SolutionDir)..\ThirdParty\glew\include\;$(SolutionDir)..\ThirdParty\glfw\include\;$(SolutionDir)..\ThirdParty\glm\include\;$(SolutionDir)..\ThirdParty\soil\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ThirdParty\glfw\lib\$(Configuration)\$(Platform)\;$(SolutionDir)..\ThirdParty\glew\lib\$(Configuration)\$(Platform)\;$(SolutionDir)..\ThirdParty\soil\lib\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew.lib;soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\Data" "$(OutDir)Data\" /y /e /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Code\;$(SolutionDir)..\ThirdParty\;$(SolutionDir)..\ThirdParty\glew\include\;$(SolutionDir)..\ThirdParty\glfw\include\;$(SolutionDir)..\ThirdParty\glm\include\;$(SolutionDir)..\ThirdParty\soil\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ThirdParty\glfw\lib\$(Configuration)\$(Platform)\;$(SolutionDir)..\ThirdParty\glew\lib\$(Configuration)\$(Platform)\;$(SolutionDir)..\ThirdParty\soil\lib\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew.lib;soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\Data" "$(OutDir)Data\" /y /e /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Code\;$(SolutionDir)..\ThirdParty\;$(SolutionDir)..\ThirdParty\glew\include\;$(SolutionDir)..\ThirdParty\glfw\include\;$(SolutionDir)..\ThirdParty\glm\include\;$(SolutionDir)..\ThirdParty\soil\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ThirdParty\glfw\lib\$(Configuration)\$(Platform)\;$(SolutionDir)..\ThirdParty\glew\lib\$(Configuration)\$(Platform)\;$(SolutionDir)..\ThirdParty\soil\lib\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew.lib;soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\Data" "$(OutDir)Data\" /y /e /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Code\;$(SolutionDir)..\ThirdParty\;$(SolutionDir)..\ThirdParty\glew\include\;$(SolutionDir)..\ThirdParty\glfw\include\;$(SolutionDir)..\ThirdParty\glm\include\;$(SolutionDir)..\ThirdParty\soil\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ThirdParty\glfw\lib\$(Configuration)\$(Platform)\;$(SolutionDir)..\ThirdParty\glew\lib\$(Configuration)\$(Platform)\;$(SolutionDir)..\ThirdParty\soil\lib\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew.lib;soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\Data" "$(OutDir)Data\" /y /e /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Base\Geom\BoundingBox.cpp" />
+    <ClCompile Include="Base\Geom\VertexBlob.cpp" />
+    <ClCompile Include="Base\Geom\Quaternion.cpp" />
+    <ClCompile Include="Base\Geom\Transform.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Render\Camera.cpp" />
+    <ClCompile Include="Render\ElementBufferObject.cpp" />
+    <ClCompile Include="Render\Shaders\FragmentShader.cpp" />
+    <ClCompile Include="Render\Shaders\Shader.cpp" />
+    <ClCompile Include="Render\Shaders\ShaderProgram.cpp" />
+    <ClCompile Include="Render\Shaders\VertexShader.cpp" />
+    <ClCompile Include="Render\Texture2D.cpp" />
+    <ClCompile Include="Render\VertexArrayObject.cpp" />
+    <ClCompile Include="Render\VertexBufferObject.cpp" />
+    <ClCompile Include="Scene\Lights\DirectionalLight.cpp" />
+    <ClCompile Include="Scene\Lights\LightsArray.cpp" />
+    <ClCompile Include="Scene\Lights\LightsSource.cpp" />
+    <ClCompile Include="Scene\Lights\PointLights.cpp" />
+    <ClCompile Include="Scene\Lights\SpotLight.cpp" />
+    <ClCompile Include="Scene\Materials\ColoredMaterial.cpp" />
+    <ClCompile Include="Scene\Materials\Material.cpp" />
+    <ClCompile Include="Scene\Materials\TexturedMaterial.cpp" />
+    <ClCompile Include="Scene\MeshData.cpp" />
+    <ClCompile Include="Scene\Model3d.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base\ArrayView.h" />
+    <ClInclude Include="Base\EnumFlags.h" />
+    <ClInclude Include="Base\Geom\BoundingBox.h" />
+    <ClInclude Include="Base\Geom\IndexBlob.h" />
+    <ClInclude Include="Base\Geom\VertexBlob.h" />
+    <ClInclude Include="Base\Geom\Quaternion.h" />
+    <ClInclude Include="Base\Geom\Transform.h" />
+    <ClInclude Include="Base\Geom\Vector.h" />
+    <ClInclude Include="Base\Stopwatch.h" />
+    <ClInclude Include="Render\Camera.h" />
+    <ClInclude Include="Render\Shaders\FragmentShader.h" />
+    <ClInclude Include="Render\Shaders\Shader.h" />
+    <ClInclude Include="Render\Shaders\ShaderProgram.h" />
+    <ClInclude Include="Render\Shaders\ShaderType.h" />
+    <ClInclude Include="Render\ElementBufferObject.h" />
+    <ClInclude Include="Render\Shaders\VertexShader.h" />
+    <ClInclude Include="Render\Texture.h" />
+    <ClInclude Include="Render\VertexArrayObject.h" />
+    <ClInclude Include="Render\VertexBufferObject.h" />
+    <ClInclude Include="Scene\Lights\DirectionalLight.h" />
+    <ClInclude Include="Scene\Lights\LightsArray.h" />
+    <ClInclude Include="Scene\Lights\LightSource.h" />
+    <ClInclude Include="Scene\Lights\PointLight.h" />
+    <ClInclude Include="Scene\Lights\SpotLight.h" />
+    <ClInclude Include="Scene\Materials\ColoredMaterial.h" />
+    <ClInclude Include="Scene\Materials\IMaterial.h" />
+    <ClInclude Include="Scene\Materials\Material.h" />
+    <ClInclude Include="Scene\Materials\TexturedMaterial.h" />
+    <ClInclude Include="Scene\MeshData.h" />
+    <ClInclude Include="Scene\Model3d.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Data\Readme.txt" />
+    <Text Include="..\Data\Shaders\ColoredMaterialFS.glsl">
+      <FileType>Document</FileType>
+    </Text>
+    <Text Include="..\Data\Shaders\NoLightColoredMaterialFS.glsl">
+      <FileType>Document</FileType>
+    </Text>
+    <Text Include="..\Data\Shaders\TexturedMaterialFS.glsl">
+      <FileType>Document</FileType>
+    </Text>
+    <Text Include="..\Data\Shaders\VS.glsl">
+      <FileType>Document</FileType>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Data\Textures\container_diffuse.png" />
+    <Image Include="..\Data\Textures\container_specular.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

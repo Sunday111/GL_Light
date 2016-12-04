@@ -1,0 +1,4 @@
+*.metagen
+*.res
+Solution/*
+!Solution/*.sln
